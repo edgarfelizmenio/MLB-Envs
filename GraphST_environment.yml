@@ -1,0 +1,16 @@
+name: GraphST
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - conda-forge::scanpy==1.9.8
+  - conda-forge::scikit-misc
+  - squidpy
+  - python=3.8
+  - pytorch
+  - conda-forge::pot
+  - ipykernel
+  - pip
+  - pip:
+    - graphst
+prefix: /opt/conda/envs/GraphST

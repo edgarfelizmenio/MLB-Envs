@@ -1,0 +1,18 @@
+name: CARD
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - r::r-base
+  - r::r-irkernel
+  - r-matrix
+  - r-devtools
+  - r-mass
+  - r::r-units
+  - r::r-systemfonts
+  - r::r-v8
+  - r::r-sf
+  - r::r-concaveman
+  - r::r-viridis
+  - anaconda::fonts-anaconda
+prefix: /opt/conda/envs/CARD

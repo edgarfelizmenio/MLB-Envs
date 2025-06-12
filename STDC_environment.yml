@@ -1,0 +1,24 @@
+name: STDC
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - pytorch-cuda=11.8
+  - torchaudio
+  - torchvision
+  - ipywidgets
+  - anaconda::ipykernel
+  - conda-forge::scanpy
+  - conda-forge::squidpy
+  - conda-forge::pillow
+  - conda-forge::dataconf
+  - conda-forge::r-recommended
+  - conda-forge::r-mclust
+  - conda-forge::pot
+  - conda-forge::scikit-learn-intelex
+  - conda-forge::kneed
+  - conda-forge::optuna
+  - conda-forge::optuna-dashboard
+  - plotly=5.23.0
+prefix: /opt/conda/envs/STDC
