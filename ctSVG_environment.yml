@@ -8,16 +8,19 @@ dependencies:
   - setuptools
   - ipykernel
   - ipywidgets
-  - pytorch==2.5.1
-  - torchvision==0.20.1
-  - torchaudio==2.5.1
-  - pytorch-cuda=11.8
+  - nvidia::cuda-cudart
+  - pytorch::pytorch==2.5.1
+  - pytorch::torchvision==0.20.1
+  - pytorch::torchaudio==2.5.1
+  - pytorch::pytorch-cuda=11.8
   - python-igraph
   - leidenalg
   - scanpy
   - conda-forge::jupyterlab_widgets
   - nodejs
   - squidpy=1.6.5
+  - conda-forge::requests_cache
+  - bioconda::pybiomart
   # - wheel
   - pip:
     # - pip==25.0
