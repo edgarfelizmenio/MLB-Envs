@@ -492,3 +492,27 @@ dependencies:
       - triton==3.3.1
       - virtualenv==20.31.2
 prefix: /opt/conda/envs/STAMarker
+name: STAMarker
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - squidpy=1.2.2
+  - tensorflow=2.8.1
+  - scikit-learn=1.1.1
+  - anndata=0.8.0
+  - pip==24.0
+  - scipy=1.8.1
+  - pandas=1.4.2
+  - qpsolvers=2.4.0
+  - scanpy==1.9.6
+  - matplotlib==3.9.2
+  - tqdm=4.64.0
+  - stardist=0.8.3
+  - leidenalg
+  - python-igraph
+  - rpy2
+  - ipykernel
+  - conda-forge::upsetplot
+  - conda-forge::louvain
+prefix: /opt/conda/envs/STAMarker
