@@ -10,34 +10,27 @@ dependencies:
   - ipywidgets
   - nvidia::cuda-cudart
   - pytorch::pytorch==2.5.1
-  - pytorch::torchvision==0.20.1
   - pytorch::torchaudio==2.5.1
   - pytorch::pytorch-cuda=11.8
   - python-igraph
   - leidenalg
-  - scanpy
   - conda-forge::jupyterlab_widgets
   - nodejs
   - squidpy=1.6.5
   - conda-forge::requests_cache
   - bioconda::pybiomart
-  # - wheel
   - pip:
-    # - pip==25.0
-    # - ipykernel==6.29.5
-    # - ipywidgets==8.1.5
-    - leidenalg==0.10.2
-    # - pyg-lib==0.4.0+pt25cu118
+    - pyg-lib==0.4.0+pt27cu118
     - scanpy==1.11.1
-    # - setuptools==75.8.0
-    # - torch_cluster==1.6.3+pt25cu118
-    # - torch-geometric==2.6.1
-    # - torch_scatter==2.1.2+pt25cu118
-    # - torch_sparse==0.6.18+pt25cu118
-    # - torch_spline_conv==1.2.2+pt25cu118
-    # - torchaudio==2.5.1+cu118
-    # - torchdata==0.11.0
-    # - torchvision==0.20.1+cu118
-    # - wheel==0.45.1
+    - torch==2.7.1+cu118
+    - torch_cluster==1.6.3+pt27cu118
+    - torch-geometric==2.6.1
+    - torch_scatter==2.1.2+pt27cu118
+    - torch_sparse==0.6.18+pt27cu118
+    - torch_spline_conv==1.2.2+pt27cu118
+    - torchaudio==2.7.1+cu118
+    - torchvision==0.22.1+cu118
     - scikit-misc==0.5.1
+    - pytorch-lightning==2.5.2
+    - captum==0.8.0
 prefix: /opt/conda/envs/ctSVG
