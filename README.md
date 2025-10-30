@@ -12,5 +12,8 @@ Environment configuration files for tools used in MLB
 
 ### External
 - CARD
+  ```bash
+  source CARD_install.sh
+  ```
 - CELINA
 - GraphST

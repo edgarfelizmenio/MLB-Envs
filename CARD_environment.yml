@@ -9,9 +9,10 @@ dependencies:
   - r-devtools
   - r-mass
   - r::r-units
-  - r::r-systemfonts
-  - r::r-v8
-  - r::r-sf
+  - conda-forge::r-systemfonts
+  - conda-forge::r-s2
+  - conda-forge::r-v8
+  - conda-forge::r-sf
   - r::r-concaveman
   - r::r-viridis
   - anaconda::fonts-anaconda
