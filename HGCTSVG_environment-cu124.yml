@@ -1,0 +1,36 @@
+name: HGCTSVG
+channels:
+  - main
+  - conda-forge
+  - bioconda
+dependencies:
+  - python==3.12
+  - pip
+  - setuptools
+  - ipykernel
+  - jupyterlab_widgets
+  - ipywidgets
+  - cuda-cudart
+  - cuda-version=12
+  - requests_cache
+  - pybiomart
+  - scanpy
+  - python-igraph
+  - leidenalg
+  - squidpy 
+  - pip:
+    - captum
+    - cyclopts
+prefix: /opt/conda/envs/HGCTSVG
+
+# pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
+# pip install torch_geometric
+
+# Optional dependencies:
+# pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.6.0+cu118.html
+
+# pip install 'scanpy[leiden]'
+# pip install scikit-misc
+# pip install captum
+# pip install cyclopts
+# pip install zarr==2.18.7

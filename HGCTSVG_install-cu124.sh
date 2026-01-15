@@ -1,30 +1,28 @@
 #!/bin/bash
 
-ENV_NAME="Spotiphy"
+ENV_NAME="HGCTSVG"
 
 source $(conda info --base)/etc/profile.d/conda.sh
 
 # Create Conda environment if it doesn't exist
 if ! conda info --envs | grep -1 "$ENV_NAME"; then
     echo "Creating Conda environment: $ENV_NAME"
-    conda create -n Spotiphy python=3.9
+    conda env create -f ${ENV_NAME}_environment-cu124.yml
 
     # Activate the Conda environment
     echo "Activating Conda environment: $ENV_NAME"
     conda activate --stack $ENV_NAME
     conda info --envs
 
-    # Installing Spotiphy dependencies...
-    echo "Installing Spotiphy dependencies..."
-    conda install "setuptools<81"
-    pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cu118
-    pip install opencv-python-headless
-    pip install 'numpy<2'
-    pip install tensorflow[and-cuda]==2.16.2
+    # Install pytorch
+    pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 
-    # Installing Spotiphy...
-    echo "Installing Spotiphy..."
-    pip install spotiphy==0.3.1
+    # Install pyg
+    pip install torch_geometric
+    
+    # Optional pyg dependencies:
+    pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.6.0+cu124.html
+
 else
     echo "Conda environment $ENV_NAME already exists."
 fi
