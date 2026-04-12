@@ -1,19 +1,30 @@
 name: CARD
 channels:
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
+  - conda-forge
+  - bioconda
+  - r
+  - anaconda
+  - defaults
 dependencies:
-  - r::r-base
-  - r::r-irkernel
+  - r-base
+  - r-irkernel
   - r-matrix
   - r-devtools
   - r-mass
-  - r::r-units
-  - conda-forge::r-systemfonts
-  - conda-forge::r-s2
-  - conda-forge::r-v8
-  - conda-forge::r-sf
-  - r::r-concaveman
-  - r::r-viridis
-  - anaconda::fonts-anaconda
+  - r-units
+  - r-systemfonts
+  - r-s2
+  - r-v8
+  - r-sf
+  - r-concaveman
+  - r-viridis
+  - fonts-anaconda
+  - bioconductor-s4arrays
+  - bioconductor-sparsearray
+  - bioconductor-delayedarray
+  - bioconductor-genomeinfodbdata
+  - bioconductor-biobase
+  - bioconductor-summarizedexperiment
+  - bioconductor-singlecellexperiment
+  - bioconductor-toast
 prefix: /opt/conda/envs/CARD
