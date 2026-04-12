@@ -1,19 +1,25 @@
 name: CELINA
 channels:
-  - https://repo.anaconda.com/pkgs/main
-  - https://repo.anaconda.com/pkgs/r
+  - conda-forge
+  - bioconda
+  - r
+  - anaconda
+  - defaults
 dependencies:
-  - r::r-base
-  - r::r-irkernel
-  - r-matrix
+  - r-base
+  - r-irkernel
   - r-devtools
+  - r-biocmanager
+  - bioconductor-scater
+  - r-compquadform
   - r-mass
-  - r::r-ggrastr
-  - conda-forge::cairo
-  # - r::r-units
-  # - r::r-systemfonts
-  # - r::r-v8
-  # - r::r-sf
-  # - r::r-concaveman
+  - r-pbmcapply
+  - r-pdist
+  - r-pracma
+  - r-rcpparmadillo
+  - r-tidyr
+  - r-fields
+  - r-mgcv
+  - r-dplyr
 prefix: /opt/conda/envs/CELINA
     

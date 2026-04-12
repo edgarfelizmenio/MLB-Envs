@@ -1,28 +1,36 @@
 #!/bin/bash
+set -x
+trap 'echo "Error on line $LINENO. Exiting script."; exit 1' ERR
 
 ENV_NAME="CELINA"
 
-source $(conda info --base)/etc/profile.d/conda.sh
+source $(conda info --base)/etc/profile.d/mamba.sh
 
 # Create Conda environment if it doesn't exist
-if ! conda info --envs | grep -1 "$ENV_NAME"; then
+if ! mamba info --envs | grep -q "$ENV_NAME"; then
     echo "Creating Conda environment: $ENV_NAME"
-    conda env create -f CELINA_environment.yml
+    mamba env create -f CELINA_environment.yml -y || exit 1
 
     # Activate the Conda environment
     echo "Activating Conda environment: $ENV_NAME"
-    conda activate --stack $ENV_NAME
-    conda info --envs
+    mamba activate $ENV_NAME
+    # mamba config append pinned_packages python=3.9.2
+    mamba info --envs
+    conda config --show pinned_packages
 
-    # Run the R script to install Bioconductor and Github packages
-    echo "Running R script to install Bioconductor and GitHub packages..."
-    Rscript CELINA_install_packages.R
+    rm -rf $CONDA_PREFIX/conda-meta/pinned
+    
+    # Installing GitHub R packages...
+    echo "Installing CELINA..."
+    Rscript -e "remotes::install_github('pekjoonwu/CELINA')" || exit 1
+    
 else
     echo "Conda environment $ENV_NAME already exists."
 fi
 
 echo "Setup complete! Run the following command to activate the environment:
 
-conda activate --stack $ENV_NAME
+mamba activate --stack $ENV_NAME
 
 "
+set +x
