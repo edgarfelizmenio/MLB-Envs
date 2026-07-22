@@ -1,0 +1,43 @@
+name: NetBID2
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  # ── R base ──────────────────────────────────────────────────────────────────
+  - r-base>=4.2
+  - r-devtools
+  - r-irkernel
+
+  # ── Bioconductor ─────────────────────────────────────────────────────────
+  - bioconductor-summarizedexperiment
+  - bioconductor-biobase
+  - bioconductor-geoquery
+  - bioconductor-limma
+  - bioconductor-impute
+  - bioconductor-tximport
+  - bioconductor-deseq2
+  - bioconductor-consensusclusterplus
+  - bioconductor-complexheatmap
+  - bioconductor-biomart
+  - bioconductor-gsva
+  - bioconductor-rhdf5
+
+  # ── CRAN ─────────────────────────────────────────────────────────────────
+  - r-igraph
+  - r-rcolorbrewer
+  - r-plot3d
+  - r-plotrix
+  - r-umap
+  - r-plotly
+  - r-ordinal
+  - r-mcmcglmm
+  - r-arm
+  - r-reshape
+  - r-msigdbr
+  - r-openxlsx
+  - r-rmarkdown
+  - r-kableextra
+  - r-aricode

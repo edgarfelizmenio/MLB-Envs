@@ -1,4 +1,4 @@
-name: HGCTSVG
+name: HyperSpot
 channels:
   - main
   - conda-forge
@@ -21,7 +21,8 @@ dependencies:
   - pip:
     - captum
     - cyclopts
-prefix: /opt/conda/envs/HGCTSVG
+    - einops
+prefix: /opt/conda/envs/HyperSpot
 
 # pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
 # pip install torch_geometric

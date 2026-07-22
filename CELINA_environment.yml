@@ -9,6 +9,7 @@ dependencies:
   - r-base
   - r-irkernel
   - r-devtools
+  - r-remotes
   - r-biocmanager
   - bioconductor-scater
   - r-compquadform
@@ -21,5 +22,6 @@ dependencies:
   - r-fields
   - r-mgcv
   - r-dplyr
+  - r-hdf5r
 prefix: /opt/conda/envs/CELINA
     

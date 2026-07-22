@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ENV_NAME="HGCTSVG"
+ENV_NAME="HyperSpot"
 
 source $(conda info --base)/etc/profile.d/conda.sh
 

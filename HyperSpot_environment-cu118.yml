@@ -1,4 +1,4 @@
-name: ctSVG
+name: HyperSpot
 channels:
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
@@ -37,7 +37,8 @@ dependencies:
     - pytorch-lightning==2.5.2
     - captum==0.8.0
     - cyclopts==3.24.0
-prefix: /opt/conda/envs/ctSVG
+    - einops
+prefix: /opt/conda/envs/HyperSpot
 
 # pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu118
 # pip install torch_geometric

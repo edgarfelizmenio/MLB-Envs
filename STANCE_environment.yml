@@ -1,0 +1,21 @@
+name: STANCE
+channels:
+  - conda-forge
+  - bioconda
+  - r
+  - anaconda
+  - defaults
+dependencies:
+  - r-base
+  - r-irkernel
+  - r-devtools
+  - r-biocmanager
+  - r-spacexr
+  - r-gaston
+  - r-topicmodels
+  - r-scatterpie
+  - bioconda::bioconductor-biocparallel
+  - bioconda::bioconductor-fgsea=1.28.0
+  - r-hdf5r
+prefix: /opt/conda/envs/STANCE
+    

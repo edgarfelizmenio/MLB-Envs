@@ -9,4 +9,5 @@ dependencies:
   - r-base>=4.2.3
   - python=3.9.2
   - pip
+  - r-irkernel
   # - openssl=1.1.*
